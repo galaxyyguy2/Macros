@@ -184,14 +184,13 @@ def action_loop():
             print("works")
             pydirectinput.press('m')
             time.sleep(5)
-            if detect_color(*tpmenu):
-                for _ in range(11):
-                    move(*upbut)
-                    time.sleep(0.2)
-                time.sleep(0.5)
-                move(*island)
-                time.sleep(0.5)
-                move(*tpbut)
+            for _ in range(11):
+                move(*upbut)
+                time.sleep(0.2)
+            time.sleep(0.5)
+            move(*island)
+            time.sleep(0.5)
+            move(*tpbut)
         else:
             time.sleep(0.4)
 
