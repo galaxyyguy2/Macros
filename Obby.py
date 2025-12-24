@@ -1,4 +1,4 @@
-﻿from pynput import keyboard
+from pynput import keyboard
 from PIL import ImageGrab
 import pydirectinput
 import numpy as np
@@ -45,6 +45,9 @@ if screen_width == 2560 and screen_height == 1440:
     bgsiplay2 = (1406, 708)
     bgsiplay3 = (1603, 623), (233, 166, 28)
     bgsiplay4 = (1603, 623)
+    tpbut = (1273, 1362)
+    upbut = (1711, 442)
+    island = (932, 1087)
 elif screen_width == 1920 and screen_height == 1080:
     res_info = 1920
     temp = (0, 0)
@@ -55,6 +58,9 @@ elif screen_width == 1920 and screen_height == 1080:
     bgsiplay2 = (1067, 541)
     bgsiplay3 = (1234, 457), (233, 166, 28)
     bgsiplay4 = (1234, 457)
+    tpbut = (964, 1012)
+    upbut = (1325, 301)
+    island = (663, 857)
 else:
     ctypes.windll.user32.MessageBoxW(
         0,
@@ -174,6 +180,18 @@ def action_loop():
                     print("yooo i did it!! i pressed play!1!1!!")
                 if not detect_color(*reconnectui):
                     print("damnn sweet u reconnected how fortunate")
+            else:
+                pydirectinput.press('m')
+                time.sleep(5)
+                if detect_color(*tpmenu):
+                    for _ in range(11):
+                        move(*upbut)
+                        time.sleep(0.2)
+                    time.sleep(0.5)
+                    move(*island)
+                    time.sleep(0.5)
+                    move(*tpbut)
+
         else:
             time.sleep(0.4)
 
