@@ -180,18 +180,18 @@ def action_loop():
                     print("yooo i did it!! i pressed play!1!1!!")
                 if not detect_color(*reconnectui):
                     print("damnn sweet u reconnected how fortunate")
-            else:
-                pydirectinput.press('m')
-                time.sleep(5)
-                if detect_color(*tpmenu):
-                    for _ in range(11):
-                        move(*upbut)
-                        time.sleep(0.2)
-                    time.sleep(0.5)
-                    move(*island)
-                    time.sleep(0.5)
-                    move(*tpbut)
-
+            time.sleep(2)
+            print("works")
+            pydirectinput.press('m')
+            time.sleep(5)
+            if detect_color(*tpmenu):
+                for _ in range(11):
+                    move(*upbut)
+                    time.sleep(0.2)
+                time.sleep(0.5)
+                move(*island)
+                time.sleep(0.5)
+                move(*tpbut)
         else:
             time.sleep(0.4)
 
