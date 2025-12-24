@@ -1,8 +1,3 @@
-﻿{
-  "BoardGame": "https://the-galactic-hollow.netlify.app/BoardGame.py",
-  "Dart": "https://the-galactic-hollow.netlify.app/Dart.py",
-  "Obby": "https://the-galactic-hollow.netlify.app/Obby.py",
-  "FastHatch": "https://the-galactic-hollow.netlify.app/Hatch.py",
+{
   "test": "https://raw.githubusercontent.com/galaxyyguy2/Macros/refs/heads/main/test.py"
 }
-
