@@ -185,7 +185,7 @@ def action_loop():
             pydirectinput.press('m')
             time.sleep(5)
             for _ in range(11):
-                move(*upbut)
+                move(upbut)
                 time.sleep(0.2)
             time.sleep(0.5)
             move(*island)
